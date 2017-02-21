@@ -1,2 +1,3 @@
 *.pyc
-.idea\*.*
+.idea\*.iml
+.idea\*.xml
