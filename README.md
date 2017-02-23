@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: Because there are two boxes has same two-digit value, it can be a new constrain for other boxes in the unit (row, column, or square). This tells there is no way to have any (either or both) of number consist of the two-digit value as a value of other boxes in the unit.
+A: Each unit has unique number of one through nine. If there are naked twins in the units, other boxes outside of those boxes won't have those values, therefore it can reduce the potential values if they are unresolved. Applying this constrains and reduction of potential values against all the units recursively would reduce the search space of entire puzzle.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: Since diagnal would be another two unit that would have to have unique value in each boxes, this is a new constrain that limit what value can be in those boxes.
+A: Since diagonals would be additional two units that have unique number of one through nine, they enforce additional constraints on entire puzzle. Adding more contracts would reduce search space for unresolved boxes and that helps resolving the puzzle.
 
 ### Install
 
