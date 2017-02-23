@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: Because there are two boxes has same two-digit value, it can be a new constrain for other boxes in the unit (row, column, or square). This tells there is no way to have any (either or both) of number consist of the two-digit value as a value of other boxes in the unit.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: Since diagnal would be another two unit that would have to have unique value in each boxes, this is a new constrain that limit what value can be in those boxes.
 
 ### Install
 
